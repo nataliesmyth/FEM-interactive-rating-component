@@ -82,7 +82,20 @@ textarea:not([rows]) {
 
 body {
     font-family: 'Overpass', sans-serif;
-    background: var(--clr-very-dark-blue);
+    background: hsl(var(--clr-very-dark-blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    padding-block: 1em;
+    text-align: left;
+}
+
+p {
+    padding-block-end: .75em;
 }
 
 .container {
@@ -95,6 +108,39 @@ body {
     width: 20.4375rem;
     height: 22.5rem;
     background: var(--clr-gradient-black);
+    padding-inline: 2em;
+}
+
+.rating {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating > a {
+    display: flex;
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 0 .85em;
+    border-radius: 50%;
+    position: relative;
+    place-items: center;
+    aspect-ratio: 1;
+}
+
+.button {
+    width: 100%;
+    background: hsl(var(--clr-primary));
+    border: none;
+    color: hsl(var(--clr-white));
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: .65em;
+}
+
+.thank-you-container {
+    display: none;
 }
 
 @media (min-width: 1440px) {
