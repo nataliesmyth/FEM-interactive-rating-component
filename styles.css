@@ -195,5 +195,7 @@ body {
 }
 
 @media (min-width: 1440px) {
-
+  .container {
+    width: 25.75rem;
+  }
 }
