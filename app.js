@@ -1,4 +1,4 @@
-const ratingCards = document.querySelectorAll(".rating span");
+const ratingCards = document.querySelectorAll(".rating li");
 const submitBtn = document.getElementById("submitBtn");
 const ratePoint = document.getElementById("rate");
 const ratingSection = document.querySelector(".rating-section");

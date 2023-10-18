@@ -122,7 +122,12 @@ body {
   margin-bottom: 1em;
 }
 
-.rating > span {
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.rating > li {
   width: 2.625rem;
   height: 2.625rem;
   display: flex;
@@ -137,7 +142,7 @@ body {
   aspect-ratio: 1;
 }
 
-.rating > span:hover {
+.rating > li:hover {
   background-color: hsl(var(--clr-light-grey));
   color: hsl(var(--clr-white));
 }
@@ -197,5 +202,6 @@ body {
 @media (min-width: 1440px) {
   .container {
     width: 25.75rem;
+    height: 26rem;
   }
 }
